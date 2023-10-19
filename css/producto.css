@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;    
+}
+body{
+    font-family: 'Ubunto';
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    width: 500px;
+}
+main{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+.div-img{
+    display: block;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.div-edit{
+    display: block;
+    flex-basis: 50%;
+    padding: 10px 10px;
+}
+
+/*ESTILOS DIV INFORMACION DEL PRODUCTO*/
+.div-info{
+    max-width: 1025px;
+    padding: 25px;
+}
+.div-info h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+.div-info .div-title span{
+    font-size: 20px;
+}
+.div-info .div-title a{
+    text-decoration: none;
+    color: #000;
+}
+.form-group label{
+    font-size: 20px;
+}
+
+/*ESTILOS DE LAS OPCIONES TALLAS*/
+.div-tallas{
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 10px;
+    justify-content: space-between;
+    font-weight: 800;
+    border: 1px solid #F5F5F5;
+    padding: 30px;
+    background-color: #F5F5F5;
+}
+.div-tallas button{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    margin-right: 10px;
+    border: solid 2px #000;
+    padding: 0.9em;
+}
+.div-tallas  button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.div-tallas .talla-button.selected{
+    background-color: #000;
+    color: #fff
+}
+.talla-button:focus{
+    outline: none;
+}
+
+/* ESTILOS DE LA OPCION DE LA CANTIDAD DEL PRODUCTO*/
+.div-cantidad{
+    margin-top: 50px;
+    margin-bottom:40px;
+}
+.div-cantidad label{
+    font-size: 18px;
+}
+.div-cantidad input{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* ESTILOS BOTON DE AGREGAR AL CARRITO*/
+.btn-comprar{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.btn-comprar button{
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px;
+}
+.btn-comprar button:hover{
+    background-color: #2b2b2b;
+}
+
+/* ESTILOS DE LA DESCRIPCION DEL PRODUCTO*/
+.div-descrip{
+    max-width: 1000px;
+    width: 100%;
+}
+.div-descrip .div-p{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}

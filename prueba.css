@@ -1,0 +1,59 @@
+/* Reset de estilos */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Estilos para el logo */
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Estilos para la lista de menú */
+.menu {
+    list-style: none;
+    display: flex;
+}
+.menu li {
+    margin-right: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+.menu a:hover{
+    color: #FB796C;
+    transition: 0.5s;
+}
+.menu a i {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+
+    .header-nav {
+        flex-direction: column;
+        opacity: 0%;
+
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+    
+}

@@ -1,0 +1,120 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.formulario-registro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+}
+
+.formulario-registro h1 {
+    font-weight: 800;
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario-registro form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.formulario-registro img{
+    width: 50%;
+    transform: translate(50%);
+}
+form .campo-text{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.campo-text input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.campo-text label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.campo-text span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FB796C;
+    transition: .5s;
+}
+.campo-text input:focus ~ label,
+.campo-text input:focus ~ label{
+    top: -5px;
+    color: #FB796C;
+}
+
+.campo-text input:focus ~ span::before,
+.campo-text input:focus ~ span::before{
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: #FB796C;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #FB796C;
+    transition: .5s;
+}
+.opciones{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.opciones a{
+    color: #000;
+    text-decoration: none;
+}
+.opciones a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    body{
+        margin: 10px;
+
+    }
+
+    form {
+        max-width: 100%; 
+    }
+}
